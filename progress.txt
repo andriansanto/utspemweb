@@ -1,0 +1,19 @@
+1. Register (Sign Up) :
+a. firstname lastname			- 	sudah
+b. username/email			-	sudah
+c. password				-	sudah
+d. tanggal lahir (birthday)		-	sudah
+e. jenis kelamin			-	sudah
+f. bisa mendaftar user baru		-	sudah
+g. - username tidak boleh double dan harus unik				-	sudah
+   - pendaftaran tidak bisa dilakukan jika username/password kosong	- 	sudah (required)
+
+2. Login :
+a. terdapat textbox username/email		-	sudah
+b. terdapat password				-	sudah
+c. captcha					-	sudah
+d. terdapat button verifikasi (submit)		-	sudah
+e. terdapat peringatan jika username/password kosong	-	sudah (required)
+f. tidak dapat dihacking dengan SQL injection		-	sudah (method $_POST)
+
+3. profil :
