@@ -14,10 +14,10 @@
 </head>
 <body>
 <div class="login-page">
-    <div class="login-box  p-3"> <!-- hai adrian ganteng -->
+    <div class="login-box  p-3"> <!-- TEST GIT -->
         <div class="card">
             <div class="card-body login-card-body">
-                <h2 class="text-center">Please to</h2>
+                <h2 class="text-center">Please</h2>
                 <h3 class="text-center">Login First</h3>
                 <p class="login-box-msg p-0">Please enter your username and password below</p>
       
@@ -44,6 +44,9 @@
                   <div class="text-center mb-3 form-group">
                         <button type="submit" name="login" class="btn btn-block bg-login11 text-white">>Login</button>
                     </div>
+                    <div>
+                      <p> <a href="register.php">Create an Account</a></p>
+                    </div>
                   <?php
                   $host = "localhost";
                   $username = "root";
@@ -52,7 +55,7 @@
 
                   $captcha;
                   if(isset($_POST['g-recaptcha-response']))
-                  $captcha=$_POST['g-recaptcha-response'];
+                  $captcha= $_POST['g-recaptcha-response'];
 
                   $str = "https://www.google.com/recaptcha/api/siteverify?secret=6LeWadgUAAAAAE2NT-1b5diXEXhafhqX4Cf9107T"."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR'];
 

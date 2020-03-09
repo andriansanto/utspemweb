@@ -121,7 +121,7 @@
     $checker    = "SELECT * FROM user WHERE email = '$email'";
     $emailcheck = $db->query($checker);
     $count      = mysqli_num_rows($emailcheck);
-    $gender     = $_POST["gender"];
+    $gender     = $_POST["subject"];
     $birthdate  = $_POST["birthday"];
     $hash       = md5($_POST["psw"]);
     $repeat     = md5($_POST["psw-repeat"]);
@@ -131,9 +131,9 @@
             echo "<p style='font-size: 32px;font-color: green'>Akun berhasil dibuat!</p>";
         } 
         else if($count == 1 && $repeat == $hash) {
-            echo "<p>Email yang dimasukkan sudah terdaftar! Silahkan gunakan email yang lain.</p>";
+            echo "<p style='font-size: 32px;font-color: red';>Email yang dimasukkan sudah terdaftar! Silahkan gunakan email yang lain.</p>";
         } else {
-          echo "<p style='font-size: 32px;font-color: 'red'>Password yang dimasukkan tidak sama dengan repeat password</p>";
+          echo "<p style='font-size: 32px;font-color: red';>Password yang dimasukkan tidak sama dengan repeat password</p>";
         }
     }
   ?>
