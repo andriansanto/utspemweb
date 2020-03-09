@@ -52,6 +52,7 @@
                   $username = "root";
                   $dbname = "datauts";
                   $password = "";
+                  $captcha = "";
 
                   $captcha;
                   if(isset($_POST['g-recaptcha-response']))
