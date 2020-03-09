@@ -29,7 +29,7 @@
                                 <span class="fa fa-user text-login11"></span>
                             </div>
                         </div>
-                        <input type="text" class="form-control"formControlName="user_name" placeholder="Username" name="email" required>
+                        <input type="text" class="form-control"formControlName="user_name" placeholder="Email" name="email" required>
                     </div>
                   <div class="form-group input-group mb-3">
                       <div class="input-group-prepend">
