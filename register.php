@@ -26,13 +26,13 @@
                                     <div class="col-5">
                                         <div class="input-group-desc">
                                             <label for="firstname"><b>Firstname</b></label>
-                                            <input type="text" placeholder="Firstname" name="firstname" required><br>
+                                            <input class="input--style-5" type="text" placeholder="Firstname" name="firstname" required><br>
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="input-group-desc">
                                             <label for="lastname"><b>Lastname</b></label>
-                                             <input type="text" placeholder="Lastname" name="lastname" required><br>
+                                             <input class="input--style-5" type="text" placeholder="Lastname" name="lastname" required><br>
                                         </div>
                                     </div>
                                 </div>
@@ -102,6 +102,9 @@
                         <div>
                             <button type="submit" name="regis" class="btn btn--radius-2 btn--red">Register</button>
                         </div>
+                        <div class="container_signin">
+                            <p>Already have an account? <a href="login.php" class="signin-btn">Sign in</a>.</p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -137,9 +140,7 @@
         }
     }
   ?>
-  <div class="container signin">
-    <p>Already have an account? <a href="login.php">Sign in</a>.</p>
-  </div>
+  
 </form>
 </body>
 </html>
