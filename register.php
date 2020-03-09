@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row p-t-20">
+                        <div class="form-row pt-20">
                             <label class="label label--block">You are agree to our term & police</label>
                             <div class="p-t-15">
                                 <label class="radio-container m-r-55">Yes
