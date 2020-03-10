@@ -19,7 +19,7 @@
             <div class="card-body login-card-body">
                 <h2 class="text-center">Please</h2>
                 <h3 class="text-center">Login First</h3>
-                <p class="login-box-msg p-0">Please enter your username and password below</p>
+                <p class="login-box-msg p-0">Please enter your email and password below</p>
       
                 <form class="my-3" action="" method="post">
                 <div class="container">
@@ -68,10 +68,14 @@
                   $hash   = md5($_POST['psw']);
                   $query  = "SELECT * FROM user WHERE email = '$email' AND pass = '$hash'";
                   $result = $db->query($query);
+                  list($firstname,$lastname,$emel,$birthdate,$gender,$pass) = mysqli_fetch_array($result);
                   $count  = mysqli_num_rows($result);
                   if($count == 1 && $response_arr["success"]==true){
                     echo "Berhasil Login!";
-                    echo "<script>window.location.href = 'register.php';</script><br>";
+                    session_start();
+                    $_SESSION['firstname'] = $firstname;
+                    $_SESSION['lastname'] = $lastname;
+                    echo "<script>window.location.href = 'apa.php';</script><br>";
                   } 
                   else if($count == 1 && $response_arr["success"]==false){
                     echo "Captcha anda bermasalah, apakah anda bot?";
