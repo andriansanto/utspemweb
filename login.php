@@ -76,9 +76,11 @@
                   if($count == 1 && $response_arr["success"]==true){
                     echo "Berhasil Login!";
                     session_start();
-                    $_SESSION['firstname'] = $firstname;
-                    $_SESSION['lastname'] = $lastname;
-                    echo "<script>window.location.href = 'apa.php';</script><br>";
+                    $_SESSION['firstname']  = $firstname;
+                    $_SESSION['lastname']   = $lastname;
+                    $_SESSION['email']      = $emel;
+                    $_SESSION['pass']       = $pass;
+                    echo "<script>window.location.href = 'profile.php';</script><br>";
                   } 
                   else if($count == 1 && $response_arr["success"]==false){
                     echo "Captcha anda bermasalah, apakah anda bot?";
