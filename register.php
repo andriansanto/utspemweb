@@ -87,17 +87,12 @@
                             </div>
                         </div>
                         <div class="form-row pt-20">
-                            <label class="label label--block">You are agree to our term & police</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">Yes
-                                    <input type="radio" checked="checked" name="exist">
+                            <label class="label label--block">You are agree to our term & police 
+                                <label >Check
+                                    <input type="checkbox" name="exist">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="radio-container">No
-                                    <input type="radio" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+                            </label>
                         </div>
                         <div>
                             <button type="submit" name="regis" class="btn btn--radius-2 btn--red">Register</button>
