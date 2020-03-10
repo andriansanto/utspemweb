@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
 <body>
+    
 <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
@@ -23,13 +24,13 @@
                             <div class="name">Name</div>
                             <div class="value">
                                 <div class="row row-space">
-                                    <div class="col-5">
+                                    <div class="col-6">
                                         <div class="input-group-desc">
                                             <label for="firstname"><b>Firstname</b></label>
                                             <input class="input--style-5" type="text" placeholder="Firstname" name="firstname" required><br>
                                         </div>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6">
                                         <div class="input-group-desc">
                                             <label for="lastname"><b>Lastname</b></label>
                                              <input class="input--style-5" type="text" placeholder="Lastname" name="lastname" required><br>
